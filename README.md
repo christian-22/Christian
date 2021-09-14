@@ -1,2 +1,5 @@
-# Christian Cox
-GO FUCK YOURSELF
+# christiancox.github.io
+
+
+
+hey whats up
