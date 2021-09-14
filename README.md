@@ -1,2 +1,2 @@
 # Christian Cox
-yo whats up
+GO FUCK YOURSELF
