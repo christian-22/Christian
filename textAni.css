@@ -7,25 +7,14 @@
     font-family: 'Asap', sans-serif;
 }
 
-
 .content {
 	position: relative;
 }
 
-@media only screen and (max-device-width: 480px) {
-    .content h1 {
-        color: rgb(0, 0, 0);
-        font-size: 500%;
-        position: absolute;
-        margin-top: -30px;
-    }
-    /* styles for mobile browsers smaller than 480px; (iPhone) */
- }
-
 .content h1 {
-	color: rgb(0, 0, 0);
-	font-size: 800%;
-	position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 800%;
+    position: absolute;
     margin-top: -30px;
 }
 
@@ -68,4 +57,13 @@
 			0% 100%
 		);
 	}
+}
+
+@media screen and (max-width: 620px) {
+    .content h1 {
+        color: rgb(0, 0, 0);
+        font-size: 600%;
+        position: absolute;
+        margin-top: 0px;
+    }
 }
