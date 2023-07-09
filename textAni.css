@@ -62,8 +62,8 @@
 @media screen and (max-width: 620px) {
     .content h1 {
         color: rgb(0, 0, 0);
-        font-size: 600%;
+        font-size: 450%;
         position: absolute;
-        margin-top: 0px;
+        margin-top: 20px;
     }
 }
