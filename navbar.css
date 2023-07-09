@@ -4,6 +4,7 @@
     background-color:black;
     box-shadow: -2px -2px 5px white,2px -2px 5px white;
     height: 40px;
+    width: auto;
   }
 
   #navcontainer > nav#mainbar {
