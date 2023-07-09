@@ -12,9 +12,19 @@
 	position: relative;
 }
 
+@media only screen and (max-device-width: 480px) {
+    .content h1 {
+        color: rgb(0, 0, 0);
+        font-size: 500%;
+        position: absolute;
+        margin-top: -30px;
+    }
+    /* styles for mobile browsers smaller than 480px; (iPhone) */
+ }
+
 .content h1 {
 	color: rgb(0, 0, 0);
-	font-size: 8em;
+	font-size: 800%;
 	position: absolute;
     margin-top: -30px;
 }
