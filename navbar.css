@@ -3,15 +3,12 @@
     margin: 10px 50px 10px 50px;
     background-color:black;
     box-shadow: -2px -2px 5px white,2px -2px 5px white;
-    height: 40px;
-    width: auto;
+    height: auto;
   }
 
   #navcontainer > nav#mainbar {
     width:100%;
     display:flex;
-    max-height:40px;
-    height: inherit;
   }
 
   #logo {
@@ -29,7 +26,9 @@
     padding:0;
     list-style-type:none;
     display:flex;
-    position:absolute;
+    flex-wrap: wrap;
+    min-width: -webkit-fill-available;
+    justify-content: space-evenly;
   }
 
   #navcontainer > nav#mainbar > ul#navlist > li#navitem {
@@ -38,7 +37,7 @@
     padding:0;
     text-align:center;
     display:inline-block;
-    min-width:120px;
+    min-width: 99px;
   
   } 
 
