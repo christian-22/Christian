@@ -2,8 +2,9 @@
     position:relative;
     margin: 10px 50px 10px 50px;
     background-color:black;
-    box-shadow: -2px -2px 5px white,2px -2px 5px white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     height: auto;
+    border-radius: 5px;
   }
 
   #navcontainer > nav#mainbar {
@@ -50,7 +51,6 @@
   }
 
   #navcontainer > nav#mainbar > ul#navlist > li#navitem:hover > a {
-    border-bottom: 2px solid black;
     background-color: gainsboro;
     color: black;
   }
