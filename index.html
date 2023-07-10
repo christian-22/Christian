@@ -13,10 +13,8 @@
 </head>
 
 <body>
-    <div>
-        <!-- <iframe class="clock" src="https://free.timeanddate.com/clock/i8xi9a2r/n5295/fs24/fc111/tcdcdcdc/ftb/pa8/tt0/tw1/th2/ts1/ta1/tb4" frameborder="0" width="304" height="72"></iframe> -->
-        <iframe class="clock" src="https://free.timeanddate.com/clock/i8xi9a2r/n5295/fs24/fc111/tct/pct/ftb/pa8/tt0/tw1/th2/ts1/ta1/tb4" frameborder="0" width="304" height="72" allowtransparency="true"></iframe>
-
+    <div class="clock">
+            <iframe class="clock" src="https://free.timeanddate.com/clock/i8xi9a2r/n5295/fs24/fc111/tct/pct/ftb/pa8/tt0/tw1/th2/ts1/ta1/tb4" frameborder="0" width="304" height="72" allowtransparency="true"></iframe>
     </div>
 
     <div class="content" id="welcome">
@@ -26,9 +24,6 @@
 
     <div id="navcontainer">
       <nav id="mainbar">
-        <!-- <div id="logo">
-          Christian Cox
-        </div> -->
         <ul id="navlist">
           <li id="navitem"><a href="#">Home</a></li>
           <li id="navitem"><a href="#">About</a></li>
@@ -41,64 +36,68 @@
     
     <div class="card" id="home">
         <div class="text" id="aboutproj">
-            <h2> About This Project </h2>
-            <p> This website was created as a way to give myself experience as a web developer. I hope to learn HTML, CSS,
-                Javascript, and much more. </p>
-            <p> In the future, I want this website to display my most important experiences as a developer. I have a few
-                ideas,
-                like embedding a video game I created in Unity, but a vast majority of this website will be one big
-                improvisation.<br><br>Wish me luck! </p>
+            <div class="home-card-text">
+                <h2> About This Project </h2>
+                <p> This website was created as a way to give myself experience as a web developer. I hope to learn more about HTML, CSS,
+                    Javascript, and whatever else I decide to include. </p>
+                <p> In the future, I want this website to display my most important experiences as a developer. I have a few
+                    ideas,
+                    like embedding a game I made in Unity, but a vast majority of this website will be one big
+                    improvisation.</p>
+            </div>
         </div>
     </div>
     
     <div class="card" id="home">
         <div class="text" id="aboutme">
-            <h2> About Me </h2>
-            <p> My name is Christian Cox (I hope you know by now) and I'm currently a senior at Louisiana State University.
-                I am
-                graduating with a bachelor's degree in computer science with a concentration in software engineering in the
-                spring
-                of 2022. </p>
-            <p> I am from New Orleans, Louisiana. I enjoy playing basketball, cooking and eating amazing
-                food,
-                and playing lots of video games. </p>
+            <div class="home-card-text">
+                <h2> About Me </h2>
+                <p> I graduated from Louisiana State University in the spring of 2022.
+                    I have a bachelor's degree in computer science with a concentration in software engineering. </p>
+                <p> I am from New Orleans, Louisiana. I enjoy playing basketball, cooking and eating amazing
+                    food, playing games, and talking about my cat. </p>
+            </div>
         </div>
     </div>
     
     <div class="card" id="home">
         <nav class="text" id="bnav">
-            <h2> Budget Navigation System (To be updated later) </h2>
-            <ul> 
-                    <li> <a class="link" href="Pages/tables.html"> HTML Tables </a> </li>
-                    <li> <a class="link" href="Pages/forms.html"> HTML Forms </a></li>  
-            </ul>
+            <div class="home-card-text">
+                <h2> Budget Navigation System (To be updated later) </h2>
+                <ul> 
+                        <li> <a class="link" href="Pages/tables.html"> HTML Tables </a> </li>
+                        <li> <a class="link" href="Pages/forms.html"> HTML Forms </a></li>  
+                </ul>
+            </div>
         </nav>
     </div>
 
     <div class="card" id="home">
         <div class="text" id="backlog">
-            <h2> Project Backlog -> Will be moved <a class="link" href="Pages/logs.html"> HERE</a> soon™</h2>
-            <p>
-            <ul>
-                <li> current date/time </li>
-                <li> concurrent viewer count </li>
-                <li> total view count </li>
-                <li> embedded game </li>
-                <li> UX design </li>
+            <div class="home-card-text">
+                <h2> Project Backlog -> Will be moved <a class="link" href="Pages/logs.html"> HERE</a> soon™</h2>
+                <p>
                 <ul>
-                    <li> color scheme </li>
-                    <li> fonts </li>
-                    <li> borders and windows </li>
-                    <li> navigation bar </li>
+                    <li> current date/time </li>
+                    <li> concurrent viewer count </li>
+                    <li> total view count </li>
+                    <li> embedded game </li>
+                    <li> UX design </li>
+                    <ul>
+                        <li> color scheme </li>
+                        <li> fonts </li>
+                        <li> borders and windows </li>
+                        <li> navigation bar </li>
+                    </ul>
+                    <li> new pages </li>
+                    <ul>
+                        <li> projects </li>
+                        <li> game </li>
+                        <li> resumé </li>
+                    </ul>
                 </ul>
-                <li> new pages </li>
-                <ul>
-                    <li> projects </li>
-                    <li> game </li>
-                    <li> resumé </li>
-                </ul>
-            </ul>
-            </p>
+                </p>
+            </div>
         </div>
     </div>
 </body>
