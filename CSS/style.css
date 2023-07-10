@@ -2,9 +2,11 @@ body {
     background-image: url(../Images/whitebrick.jpg);
     background-size: cover;
     background-position: 50% 50%;
+    background-repeat: no-repeat;
     width: 100%;
     height: auto;
     overscroll-behavior: none;
+    overflow-x: hidden;
 
     image-rendering: crisp-edges;
     image-rendering: -moz-crisp-edges;          /* Firefox */
@@ -36,9 +38,6 @@ footer {
 
 iframe.clock {
     position: absolute;
-    /* border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s; */
     left: 77%;
     margin-top: 15px;
     margin-right: 50px;
@@ -47,10 +46,13 @@ iframe.clock {
 
 @media screen and (max-width: 810px) {
     iframe.clock {
-        /* position: relative;
-        display: flex;
-        left: 25%;
-        top: 15px; */
         display: none;
     }
 }
+
+/* .weather {
+    position: absolute;
+    width: 250px;
+    left: 54%;
+    top: 20px;
+} */
