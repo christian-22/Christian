@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-control" content="public">
     <title>Christian - Home </title>
+    <link rel="stylesheet" type="text/css" href="CSS/loading.css">
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
     <link rel="stylesheet" type="text/css" href="CSS/textAni.css">
     <link rel="stylesheet" type="text/css" href="CSS/navbar.css">
@@ -14,104 +15,123 @@
 </head>
 
 <body>
-    <!-- <div class="weather">
-         https://www.youtube.com/watch?v=w0VEOghdMpQ
-    </div> -->
-    
-    <div class="clock">
-            <iframe class="clock" src="https://free.timeanddate.com/clock/i8xi9a2r/n5295/fs24/fc111/tct/pct/ftb/pa8/tt0/tw1/th2/ts1/ta1/tb4" frameborder="0" width="304" height="72" allowtransparency="true"></iframe>
-    </div>
+    <!-- LOADING PAGE ELEMENTS START -->
+    <ul class="panels">
+        <li class="panel" style="--index: 3"></li>
+        <li class="panel" style="--index: 2"></li>
+        <li class="panel" style="--index: 1"></li>
+        <li class="panel" style="--index: 0"></li>
+        <li class="panel" style="--index: 1"></li>
+        <li class="panel" style="--index: 2"></li>
+        <li class="panel" style="--index: 3"></li>
+    </ul>
+    <div id="loading-background"></div>
+    <!-- LOADING PAGE ELEMENTS END -->
 
-    <div class="content" id="welcome">
-        <h1>Welcome.</h1>
-        <h1>Welcome.</h1>
-    </div>
+    <!-- HOME PAGE CONTENT START -->
+    <main class="page-main" id="index-main">
+        <!-- <div class="weather">
+            https://www.youtube.com/watch?v=w0VEOghdMpQ
+        </div> -->
+    
+        <div class="clock">
+                <iframe class="clock" src="https://free.timeanddate.com/clock/i8xi9a2r/n5295/fs24/fc111/tct/pct/ftb/pa8/tt0/tw1/th2/ts1/ta1/tb4" frameborder="0" width="304" height="72" allowtransparency="true"></iframe>
+        </div>
 
-    <div id="navcontainer">
-      <nav id="mainbar">
-        <ul id="navlist">
-          <li id="navitem"><a href="#">Home</a></li>
-          <li id="navitem"><a href="#">Resumé</a></li>
-          <li id="navitem"><a href="#">Github</a></li>
-          <li id="navitem"><a href="#">Projects</a></li>
-          <li id="navitem"><a href="#">Game</a></li>
-          <li id="navitem"><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-    
-    <div class="home-card">
-        <div class="text" id="aboutproj">
-            <div class="home-card-text">
-                <h2> About This Project </h2>
-                <p> This website was created as a way to give myself experience as a web developer. I hope to learn more about HTML, CSS,
-                    Javascript, and whatever else I decide to include. </p>
-                <p> In the future, I want this website to display my most important experiences as a developer (most of my experience right now is behind an NDA). 
-                    For example, one possibility would be embedding a game I created using Unity, but a vast majority of this website will be one big
-                    improvisation.</p>
-            </div>
+        <div class="content" id="welcome">
+            <h1>Welcome.</h1>
+            <h1>Welcome.</h1>
         </div>
-    </div>
-    
-    <div class="home-card">
-        <div class="text" id="aboutme">
-            <div class="home-card-text">
-                <h2> About Me </h2>
-                <p> I graduated from Louisiana State University in the spring of 2022.
-                    I have a bachelor's degree in computer science with a concentration in software engineering. </p>
-                <p> I am from New Orleans, Louisiana. I enjoy playing basketball, cooking and eating amazing
-                    food, playing games, and talking about my cat. </p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="home-card">
-        <nav class="text" id="bnav">
-            <div class="home-card-text">
-                <h2> Budget Navigation System (old pages from the HTML version that will be removed eventually) </h2>
-                <ul> 
-                        <li> <a class="link" href="Pages/tables.html"> HTML Tables </a> </li>
-                        <li> <a class="link" href="Pages/forms.html"> HTML Forms </a></li>  
-                </ul>
-            </div>
+
+        <div id="navcontainer">
+        <nav id="mainbar">
+            <ul id="navlist">
+            <li id="navitem"><a href="#">Home</a></li>
+            <li id="navitem"><a href="#">Resumé</a></li>
+            <li id="navitem"><a href="#">Github</a></li>
+            <li id="navitem"><a href="#">Projects</a></li>
+            <li id="navitem"><a href="#">Game</a></li>
+            <li id="navitem"><a href="#">Contact</a></li>
+            </ul>
         </nav>
-    </div>
+        </div>
 
-    <div class="home-card">
-        <div class="text" id="backlog">
-            <div class="home-card-text">
-                <h2> Project Backlog -> will be moved to a new layout soon™ when my JS upgrade is complete.</h2>
-                <p>
-                <ul>
-                    <li> JS weather app + dynamic website widget </li>
-                    <li> total view count </li>
-                    <li> embedded game </li>
-                    <li> UX design 
-                        <ul>
-                            <li> animations </li>
-                            <li> loading screen </li>
-                            <li> dynamic pages / nav bar </li>
-                        </ul>
-                    </li>
-                    <li> new pages
-                        <ul>
-                            <li> projects </li>
-                            <li> game </li>
-                            <li> resumé </li>
-                            <li> github </li>
-                            <li> contact widget / emailer </li>
-                        </ul>
-                    </li>
-                </ul>
-                </p>
+        <div class="home-card">
+            <div class="text" id="aboutproj">
+                <div class="home-card-text">
+                    <h2> About This Project </h2>
+                    <p> This website was created as a way to give myself experience as a web developer. I hope to learn more about HTML, CSS,
+                        Javascript, and whatever else I decide to include. </p>
+                    <p> In the future, I want this website to display my most important experiences as a developer (most of my experience right now is behind an NDA). 
+                        For example, one possibility would be embedding a game I created using Unity, but a vast majority of this website will be one big
+                        improvisation.</p>
+                </div>
             </div>
         </div>
-    </div>
+
+        <div class="home-card">
+            <div class="text" id="aboutme">
+                <div class="home-card-text">
+                    <h2> About Me </h2>
+                    <p> I graduated from Louisiana State University in the spring of 2022.
+                        I have a bachelor's degree in computer science with a concentration in software engineering. </p>
+                    <p> I am from New Orleans, Louisiana. I enjoy playing basketball, cooking and eating amazing
+                        food, playing games, and talking about my cat. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="home-card">
+            <nav class="text" id="bnav">
+                <div class="home-card-text">
+                    <h2> Budget Navigation System (old pages from the HTML version that will be removed eventually) </h2>
+                    <ul> 
+                            <li> <a class="link" href="Pages/tables.html"> HTML Tables </a> </li>
+                            <li> <a class="link" href="Pages/forms.html"> HTML Forms </a></li>  
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="home-card">
+            <div class="text" id="backlog">
+                <div class="home-card-text">
+                    <h2> Project Backlog -> will be moved to a new layout soon™ when my JS upgrade is complete.</h2>
+                    <p>
+                    <ul>
+                        <li> JS weather app + dynamic website widget </li>
+                        <li> total view count </li>
+                        <li> embedded game </li>
+                        <li> UX design 
+                            <ul>
+                                <li> animations </li>
+                                <li> loading screen </li>
+                                <li> dynamic pages / nav bar </li>
+                            </ul>
+                        </li>
+                        <li> new pages
+                            <ul>
+                                <li> projects </li>
+                                <li> game </li>
+                                <li> resumé </li>
+                                <li> github </li>
+                                <li> contact widget / emailer </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- HOME PAGE CONTENT END -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="JS/Main.js"></script>
 </body>
 
 <footer>
-    <div>
-        
+    <div>    
     </div>
 </footer>
 
