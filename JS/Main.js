@@ -4,8 +4,8 @@ function move() {
   if (i == 0) {
     i = 1;
     var elem = document.getElementById("loading-bar");
-    var width = 5;
-    var id = setInterval(frame, 10);
+    var width = 1;
+    var id = setInterval(frame, 6);
     function frame() {
       if (width >= 100) {
         clearInterval(id);
@@ -13,7 +13,6 @@ function move() {
       } else {
         width++;
         elem.style.width = width + "%";
-        elem.innerHTML = width + "%";
       }
     }
   }
