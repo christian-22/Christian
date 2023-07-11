@@ -10,7 +10,7 @@
     top: 0;
     bottom: 0;
     z-index: 9;
-    background: #dcdcdc; 
+    background: #000; 
 }
 
 .body {
@@ -96,5 +96,31 @@
 }
 
 .loaded.second-round #loading-background {
+    display: none;
+}
+
+#loading-progress {
+    position: absolute;
+    width: 100%;
+    background-color: gainsboro;
+}
+  
+#loading-bar {
+    z-index: 11;
+    position: absolute;
+    width: 1%;
+    height: 30px;
+    background-color: gainsboro;
+    color: #000;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.loaded.second-round #loading-bar {
+    display: none;
+}
+
+.loaded.second-round #loading-progress {
     display: none;
 }
