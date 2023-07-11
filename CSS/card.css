@@ -1,4 +1,4 @@
-.card#home {
+.home-card {
     box-shadow: 0 3px 6px 0 rgba(0,0,0,0.6);
     transition: 0.3s;
     width: auto;
@@ -14,10 +14,6 @@
     padding: 1px;
   }
   
-.card#home:hover {
+.home-card:hover {
     box-shadow: 0 6px 12px 0 rgba(0,0,0,0.8);
-  }
-  
-.card-container {
-    padding: 2px 16px;
   }
