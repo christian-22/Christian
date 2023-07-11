@@ -43,7 +43,7 @@
   #navcontainer > nav#mainbar > ul#navlist > li#navitem:hover > a {
     background-color: gainsboro;
     color: black;
-    text-shadow: 1px 0px 2px black;
+    text-shadow: 0.5px 0.5px 0.5px black;
   }
 
   #navcontainer > nav#mainbar > ul#navlist > .dropdown:hover {
