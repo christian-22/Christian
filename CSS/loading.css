@@ -1,0 +1,84 @@
+:root {
+    --panel-width: calc(100% / 7);
+    --black: #000;
+}
+
+#loading-background {
+    position: fixed; 
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9;
+    background: #dcdcdc; 
+}
+
+.body {
+    height: 100vh;
+    color: var(--black);
+    background: var(--black);
+    overflow: hidden;
+}
+  
+
+.panels .panel {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: calc(var(--panel-width) + 1px);
+    clip-path: inset(100% 0 0 0);
+    background: var(--black);
+    transition: all 0.9s cubic-bezier(0.25, 1, 0.25, 1);
+}
+
+.panels .panel:nth-child(2) {
+    left: var(--panel-width);
+}
+
+.panels .panel:nth-child(3) {
+    left: calc(var(--panel-width) * 2);
+}
+
+.panels .panel:nth-child(4) {
+    left: calc(var(--panel-width) * 3);
+}
+
+.panels .panel:nth-child(5) {
+    left: calc(var(--panel-width) * 4);
+}
+
+.panels .panel:nth-child(6) {
+    left: calc(var(--panel-width) * 5);
+}
+
+.panels .panel:nth-child(7) {
+    left: calc(var(--panel-width) * 6);
+}
+
+/* .page-main > div > * {
+    opacity: 0;
+    transition: all 0.5s ease-out;
+} */
+
+.loaded .panels .panel {
+    clip-path: inset(0);
+    transition-delay: calc(var(--index) * 0.05s);
+}
+
+.loaded.second-round .panels .panel {
+    clip-path: inset(0 0 100% 0);
+}
+
+.loaded.third-round {
+    overflow: auto;
+}
+
+.loaded.third-round .page-main > div > * {
+    opacity: 1;
+}
+
+.loaded.second-round #loading-background {
+    display: none;
+}
